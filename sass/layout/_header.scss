@@ -1,0 +1,108 @@
+.header {
+  width: 100%;
+  box-shadow: 0 0 1rem;
+
+  & .section-header {
+    background-color: $color-black;
+    width: 100%;
+    height: 100%;
+    padding: 1rem 5rem;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    font-weight: 900;
+
+    & .logo-container {
+      width: 300px;
+      display: flex;
+      align-items: center;
+
+      & a {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+
+        & img {
+          width: 5rem;
+          margin: 0 1rem;
+        }
+      }
+      & .logo-title {
+        font-size: $default-font-size;
+        letter-spacing: 1px;
+      }
+    }
+    & .nav-container {
+      & .nav-menu {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        & .menu-ul {
+          display: flex;
+          flex-direction: row;
+          list-style: none;
+
+          & li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0 1.2rem;
+            letter-spacing: 1px;
+            font-size: $default-font-size-small;
+          }
+        }
+      }
+      & .login-container {
+        & .login-btn {
+          padding: 0.2rem 1.5rem;
+          border-radius: 100px;
+          border: none;
+          margin: 0 0.5rem;
+          cursor: pointer;
+
+          @extend %flexCenter;
+
+          & i {
+            height: 4rem;
+            width: 3rem;
+            color: rgb(8, 2, 2);
+            padding: 0.2rem;
+            @extend %flexCenter;
+          }
+
+          & p.login-title {
+            color: #000;
+            font-weight: 900;
+            letter-spacing: 1px;
+            padding: 0.2rem;
+          }
+        }
+      }
+    }
+  }
+}
+.page-title-container {
+  @extend %flexCenter;
+  padding: 5rem 0;
+
+  .page-title_img {
+    & img {
+      float: right;
+    }
+  }
+  & .page-title_detail {
+    padding: 3rem;
+    & h4 {
+      color: $color-primary-blue;
+      font-family: "Spectral", serif;
+      font-style: italic;
+      letter-spacing: 1px;
+    }
+    & h1 {
+      color: $color-grey-dark;
+      letter-spacing: 5px;
+    }
+  }
+}
+
+// @extend %flexCenter;

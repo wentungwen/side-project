@@ -1,0 +1,32 @@
+.section-partner {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 5rem;
+  border: 1px dotted $color-grey-light;
+  align-items: center;
+  letter-spacing: 1px;
+  // filter
+
+  .filter-partner-container {
+    & .filter-partner {
+      & input {
+        border: $color-grey-dark solid 2px;
+        border-radius: 2rem;
+        padding: 1rem;
+        margin: 0 1rem;
+        &:focus {
+          outline: none;
+          border-color: $color-primary-blue;
+        }
+      }
+    }
+  }
+  & .filter-partner-result {
+    & .strong {
+      color: $color-black;
+      font-size: 3rem;
+      font-weight: 500;
+      padding: 0 1rem;
+    }
+  }
+}
