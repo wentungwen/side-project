@@ -46,15 +46,23 @@
           & li a {
             color: #fff;
             text-decoration: none;
-            padding: 0 1.2rem;
+            margin: 0 1.2rem;
             letter-spacing: 1px;
-            font-size: $default-font-size-small;
+            font-size: 1.2rem;
+            border-bottom: 0;
+            transform: translateX(-2rem);
+
+            &:focus {
+              transition: 0.1s;
+              border-bottom: solid #fff;
+              transform: translateX(0rem);
+            }
           }
         }
       }
       & .login-container {
         & .login-btn {
-          padding: 0.2rem 1.5rem;
+          padding: 0 0.8rem;
           border-radius: 100px;
           border: none;
           margin: 0 0.5rem;

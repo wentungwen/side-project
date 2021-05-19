@@ -1,11 +1,8 @@
-.btn {
+.btn,
+a {
   &:hover {
-    transform: translateY(-3px);
-    padding: 2rem 5rem;
+    transform: translateY(-2px);
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
-  }
-  &:active {
-    transform: translateY(-1px);
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2)
+    cursor: pointer;
   }
 }
