@@ -6,3 +6,12 @@ a {
     cursor: pointer;
   }
 }
+
+.btn {
+  padding: 0 0.8rem;
+  border-radius: 100px;
+  border: none;
+  margin: 0 0.5rem;
+  cursor: pointer;
+  @extend %flexCenter;
+}
