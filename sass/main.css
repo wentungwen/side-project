@@ -287,11 +287,6 @@ h5 {
           align-items: center;
 }
 
-.section-about {
-  padding-top: 25rem;
-  margin-top: -20vh;
-}
-
 .btn:hover,
 a:hover {
   -webkit-transform: translateY(-2px);
@@ -299,47 +294,6 @@ a:hover {
   -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
           box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
   cursor: pointer;
-}
-
-.section-partner {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 2rem 5rem;
-  border: 1px dotted #f0f0f0;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  letter-spacing: 1px;
-}
-
-.section-partner .filter-partner-container .filter-partner input {
-  border: #707070 solid 2px;
-  border-radius: 2rem;
-  padding: 1rem;
-  margin: 0 1rem;
-  width: 120px;
-}
-
-.section-partner .filter-partner-container .filter-partner input:focus {
-  outline: none;
-  border-color: #2699fb;
-}
-
-.section-partner .filter-partner-result {
-  height: 100%;
-  padding-left: 2rem;
-  border-left: solid 1px #f0f0f0;
-}
-
-.section-partner .filter-partner-result .strong {
-  color: #000;
-  font-size: 3rem;
-  font-weight: 500;
-  padding: 0 1rem;
 }
 
 .partner-card-section .partner-card-container {
