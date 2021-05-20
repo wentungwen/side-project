@@ -1,0 +1,36 @@
+.section-filter {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0;
+  border: 1px dotted $color-grey-light;
+  align-items: center;
+  letter-spacing: 1px;
+
+  & .filter-container {
+    & .filter {
+      & input {
+        border: $color-grey-dark solid 2px;
+        border-radius: 2rem;
+        padding: 0.7rem;
+        &:focus {
+          outline: none;
+          border-color: $color-primary-blue;
+        }
+      }
+      &.filter-portfolio input {
+        width: 100%;
+      }
+    }
+  }
+  & .filter-result {
+    height: 100%;
+    padding-left: 2rem;
+    border-left: solid 1px $color-grey-light;
+    & .strong {
+      color: $color-black;
+      font-size: 3rem;
+      font-weight: 500;
+      padding: 0 1rem;
+    }
+  }
+}

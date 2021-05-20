@@ -1,37 +1,93 @@
-.section-partner {
-  display: flex;
-  justify-content: space-between;
-  padding: 2rem 5rem;
-  border: 1px dotted $color-grey-light;
-  align-items: center;
-  letter-spacing: 1px;
+// partner card
 
-  // filter
+.partner-card-section {
+  & .partner-card-container {
+    @extend %card;
+    &:hover {
+      & .partner-card_intro {
+        transform: translateY(0rem);
+      }
+    }
 
-  .filter-partner-container {
-    & .filter-partner {
-      & input {
-        border: $color-grey-dark solid 2px;
-        border-radius: 2rem;
-        padding: 1rem;
-        margin: 0 1rem;
-        width: 120px;
-        &:focus {
-          outline: none;
-          border-color: $color-primary-blue;
+    & small {
+      text-align: center;
+    }
+    & .partner-card_name {
+      @extend %flexCenter;
+      padding-top: 2rem;
+    }
+    & .partner-card_info {
+      margin: 1rem 3rem;
+      padding: 1rem 0;
+      & .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+
+        & small {
+          color: $color-grey-dark;
         }
       }
     }
-  }
-  & .filter-partner-result {
-    height: 100%;
-    padding-left: 2rem;
-    border-left: solid 1px $color-grey-light;
-    & .strong {
-      color: $color-black;
-      font-size: 3rem;
-      font-weight: 500;
-      padding: 0 1rem;
+    & .partner-card_project {
+      padding: 1rem 3rem;
+      background-color: $color-grey-light;
+      & .partner-card_project--item {
+        margin: 1rem 0;
+        & p {
+          font-size: small;
+        }
+        & .partner-card_project--ul {
+          & li {
+            list-style: none;
+            background: $color-grey-dark;
+            display: inline-block;
+            color: #fff;
+            padding: 0.5rem 0.8rem;
+            margin: 0.1crem 0;
+            border-radius: 5rem;
+            font-size: $default-font-size-small;
+          }
+        }
+      }
+    }
+    & .partner-card_intro {
+      position: absolute;
+      top: 0;
+      background: $color-primary-dark-blue;
+      color: #fff;
+      padding: 3.5rem 0;
+      transform: translateY(-100%);
+      transition: 0.2s;
+      clip-path: ellipse(100% 13rem at 50% 20%);
+
+      & p {
+        margin: 1rem 3rem;
+        line-height: 2rem;
+        font-size: $default-font-size-small;
+      }
+    }
+    & .partner-card_btn {
+      @extend %flexCenter;
+
+      & button.btn {
+        position: absolute;
+        background-color: $color-primary-green;
+        width: 8rem;
+        height: 8rem;
+        padding: 2rem;
+        border-radius: 100%;
+        color: #fff;
+        font-weight: 900;
+        border: 0;
+        bottom: -56px;
+        line-height: 0rem;
+        transition: 0.2s;
+
+        &:hover {
+          bottom: -20px;
+        }
+      }
     }
   }
 }

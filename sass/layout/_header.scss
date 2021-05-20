@@ -33,6 +33,7 @@
       }
     }
     & .nav-container {
+      @extend %flexCenter;
       & .nav-menu {
         display: flex;
         flex-direction: row;
@@ -67,14 +68,12 @@
           border: none;
           margin: 0 0.5rem;
           cursor: pointer;
-
           @extend %flexCenter;
 
           & i {
-            height: 4rem;
-            width: 3rem;
-            color: rgb(8, 2, 2);
-            padding: 0.2rem;
+            height: 3.5rem;
+            width: 2rem;
+            color: #080202;
             @extend %flexCenter;
           }
 
@@ -96,6 +95,7 @@
   .page-title_img {
     & img {
       float: right;
+      width: 10rem;
     }
   }
   & .page-title_detail {

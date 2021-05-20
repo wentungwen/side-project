@@ -1,6 +1,6 @@
 @import "abstract/variables";
 @import "abstract/mixins";
-@import "abstract/functions";
+@import "abstract/extends";
 @import "layout/grid";
 
 @import "base/base";
@@ -8,15 +8,15 @@
 @import "base/typography";
 @import "base/utilities";
 
-@import "abstract/functions";
-
 @import "pages/home";
+@import "pages/portfolios";
+@import "pages/partners";
+@import "pages/backend";
 
 @import "components/alert";
 @import "components/button";
-@import "components/card-member-backend";
-@import "components/card-partner";
-@import "components/card-work";
+@import "components/card-backend";
+@import "components/filter";
 
 @import "layout/navbar";
 @import "layout/footer";

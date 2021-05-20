@@ -1,0 +1,20 @@
+%flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+%card {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  box-shadow: 0 0 1rem 0.1rem;
+  border-radius: 0.8rem;
+  padding-bottom: 3rem;
+  margin: 2rem 3rem;
+  &:hover {
+    transform: translateY(-3px);
+    transition: 0.3s;
+    cursor: pointer;
+  }
+}

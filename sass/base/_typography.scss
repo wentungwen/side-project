@@ -10,11 +10,22 @@ body {
   line-height: 1.7;
   color: #777777;
 }
+
+//font-size
+// $default-font-size-extra-small: 1rem;
+// $default-font-size-small: 1.2rem;
+// $default-font-size: 1.4rem;
+// $default-font-size-bigger: 1.6rem;
+// $default-font-size-large: 2rem;
+
 h1 {
   font-size: 2.4rem;
 }
 h2 {
-  font-size: 2.2rem;
+  color: $color-black;
+  font-size: $default-font-size-large;
+  font-weight: 900;
+  letter-spacing: 1px;
 }
 h3 {
   font-size: 2rem;
@@ -24,6 +35,9 @@ h4 {
 }
 h5 {
   font-size: 1.6rem;
+}
+small {
+  letter-spacing: 0.5px;
 }
 
 .heading-primary {
