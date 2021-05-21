@@ -48,29 +48,36 @@
 }
 
 // portfolio innerpage
-.portfo-innerpage-container {
-  & .col-1-of-3 {
-    margin-right: 0 !important;
-  }
-  & .portfo-innerpage_head {
-    display: flex;
-    flex-direction: column;
-    & .u-portfo-card_img {
+.section-portfo-innerpage {
+  .portfo-innerpage-container {
+    & .col-1-of-3 {
+      margin-right: 0 !important;
     }
-    & .participants {
-    }
-    & .btn-container {
-    }
-  }
-  & .portfo-innerpage_details {
-    padding: 1rem;
-    background: $color-grey-dark;
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    & .portfo-innerpage_details--1 {
+    & .portfo-innerpage_head {
       display: flex;
-      justify-content: space-between;
+      flex-direction: column;
+      & p {
+        text-align: center;
+      }
+      & .u-portfo-card_img {
+      }
+      & .participants {
+        @extend %flexCenter;
+      }
+      & .btn-container {
+        @extend %flexCenter;
+      }
+    }
+    & .portfo-innerpage_details {
+      padding: 1rem;
+      background: $color-grey-dark;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      & .portfo-innerpage_details--1 {
+        display: flex;
+        justify-content: space-between;
+      }
     }
   }
 }

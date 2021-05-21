@@ -18,11 +18,11 @@
     }
   }
 
-  @include clearfix;
+  // @include clearfix;
 
   // 只要有col-開頭均採用以下樣式，故rwd也可以直接寫在底下
   [class^="col-"] {
-    float: left;
+    // float: left;
 
     @include rwd(tab-port) {
       width: 100% !important;

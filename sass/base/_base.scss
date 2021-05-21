@@ -4,7 +4,7 @@
   /* *本身沒有包含偽元素，要多選after&before */
   margin: 0;
   padding: 0;
-  box-sizing: inherit;
+  // box-sizing: inherit;
 }
 html {
   scroll-behavior: smooth;
@@ -27,7 +27,3 @@ html {
 body {
   box-sizing: border-box;
 }
-// main {
-//   padding: 0 5rem;
-//   background-color: #ddd;
-// }
